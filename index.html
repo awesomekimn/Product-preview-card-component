@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+body,
+p {
+  margin: 0;
+}
+.mainContainer {
+  height: 95vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.subContainer {
+  width: 540px;
+  height: 405px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+}
+.perfumeImg {
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.infoContainer {
+  width: 50%;
+  padding: 30px;
+}
+@media (max-width: 550px) {
+  .subContainer {
+    width: 343px;
+    height: 590px;
+    flex-direction: column;
+  }
+  .perfumeImg {
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .infoContainer {
+    width: calc(100% - 54px);
+    height: 300px;
+    padding: 27px;
+  }
+}
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0;
+}
+.category {
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+.productName {
+  font-size: 29px;
+  margin: 18px 0;
+  line-height: 1;
+}
+.productInfo {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.newPrice {
+  font-size: 30px;
+}
+.oldPrice {
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-top: 10px;
+  margin-left: 17px;
+}
+.addToCart {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addToCart:hover {
+  background-color: hsl(157, 38%, 19%);
+  cursor: pointer;
+}
+.addToCart svg {
+  margin-right: 10px;
+}
+.fontFraunces {
+  font-family: 'Fraunces';
+}
+.fontMontserrat {
+  font-family: 'Montserrat';
+}
+.colorGray {
+  color: hsl(228, 12%, 48%);
+}
+.colorCyan {
+  color: hsl(158, 36%, 37%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5vh;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+        <img
+          class="perfumeImg"
+          src="./images/image-product-desktop.jpg"
+          alt="product-image"
+        />
+        <div class="infoContainer">
+          <p class="category fontMontserrat colorGray">PERFUME</p>
+          <p class="productName fontFraunces">
+            Gabrielle Essence Eau De Parfum
+          </p>
+          <p class="productInfo fontMontserrat colorGray">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="priceContainer">
+            <div class="newPrice fontFraunces colorCyan">$149.99</div>
+            <div class="oldPrice fontMontserrat colorGray">$169.99</div>
+          </div>
+          <button type="button" class="addToCart fontMontserrat">
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF"
+              />
+            </svg>
+            <p>Add to Cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution fontFraunces">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://velog.io/@awesomee">YEJI KIM</a>.
+    </div>
+  </body>
+</html>
