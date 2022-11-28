@@ -20,120 +20,120 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-body,
-p {
-  margin: 0;
-}
-.mainContainer {
-  height: 95vh;
-  background-color: hsl(30, 38%, 92%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.subContainer {
-  width: 540px;
-  height: 405px;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 10px;
-  display: flex;
-}
-.perfumeImg {
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-}
-.infoContainer {
-  width: 50%;
-  padding: 30px;
-}
-@media (max-width: 550px) {
-  .subContainer {
-    width: 343px;
-    height: 590px;
-    flex-direction: column;
-  }
-  .perfumeImg {
-    height: 240px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-  .infoContainer {
-    width: calc(100% - 54px);
-    height: 300px;
-    padding: 27px;
-  }
-}
-.priceContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 24px 0;
-}
-.category {
-  font-size: 11px;
-  letter-spacing: 4px;
-}
-.productName {
-  font-size: 29px;
-  margin: 18px 0;
-  line-height: 1;
-}
-.productInfo {
-  font-size: 13px;
-  line-height: 1.6;
-}
-.newPrice {
-  font-size: 30px;
-}
-.oldPrice {
-  font-size: 12px;
-  text-decoration: line-through;
-  margin-top: 10px;
-  margin-left: 17px;
-}
-.addToCart {
-  background-color: hsl(158, 36%, 37%);
-  color: hsl(0, 0%, 100%);
-  font-size: 14px;
-  border-radius: 7px;
-  border: none;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.addToCart:hover {
-  background-color: hsl(157, 38%, 19%);
-  cursor: pointer;
-}
-.addToCart svg {
-  margin-right: 10px;
-}
-.fontFraunces {
-  font-family: 'Fraunces';
-}
-.fontMontserrat {
-  font-family: 'Montserrat';
-}
-.colorGray {
-  color: hsl(228, 12%, 48%);
-}
-.colorCyan {
-  color: hsl(158, 36%, 37%);
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 1.5vh;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+      body,
+      p {
+        margin: 0;
+      }
+      .mainContainer {
+        height: 95vh;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .subContainer {
+        width: 540px;
+        height: 405px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        display: flex;
+      }
+      .perfumeImg {
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+      .infoContainer {
+        width: 50%;
+        padding: 30px;
+      }
+      @media (max-width: 550px) {
+        .subContainer {
+          width: 343px;
+          height: 590px;
+          flex-direction: column;
+        }
+        .perfumeImg {
+          height: 240px;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+        .infoContainer {
+          width: calc(100% - 54px);
+          height: 300px;
+          padding: 27px;
+        }
+      }
+      .priceContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 24px 0;
+      }
+      .category {
+        font-size: 11px;
+        letter-spacing: 4px;
+      }
+      .productName {
+        font-size: 29px;
+        margin: 18px 0;
+        line-height: 1;
+      }
+      .productInfo {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .newPrice {
+        font-size: 30px;
+      }
+      .oldPrice {
+        font-size: 12px;
+        text-decoration: line-through;
+        margin-top: 10px;
+        margin-left: 17px;
+      }
+      .addToCart {
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        font-size: 14px;
+        border-radius: 7px;
+        border: none;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .addToCart:hover {
+        background-color: hsl(157, 38%, 19%);
+        cursor: pointer;
+      }
+      .addToCart svg {
+        margin-right: 10px;
+      }
+      .fontFraunces {
+        font-family: 'Fraunces';
+      }
+      .fontMontserrat {
+        font-family: 'Montserrat';
+      }
+      .colorGray {
+        color: hsl(228, 12%, 48%);
+      }
+      .colorCyan {
+        color: hsl(158, 36%, 37%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1.5vh;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
     </style>
   </head>
   <body>
-    <div class="mainContainer">
+    <div role="main" class="mainContainer">
       <div class="subContainer">
         <img
           class="perfumeImg"
@@ -160,12 +160,12 @@ p {
                 fill="#FFF"
               />
             </svg>
-            <p>Add to Cart</p>
+            Add to Cart
           </button>
         </div>
       </div>
     </div>
-    <div class="attribution fontFraunces">
+    <div role="footer" class="attribution fontFraunces">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
